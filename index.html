@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <!-- styles css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Home | Comfy</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <nav class="header__nav menu">
+            <ul class="menu__list">
+              <li><a href="index.html" class="menu__link">Home</a></li>
+              <li><a href="products.html" class="menu__link">Products</a></li>
+              <li><a href="about.html" class="menu__link">About</a></li>
+            </ul>
+          </nav>
+          <button class="header__btn btn-toggle"><span></span></button>
+          <img src="images/logo-white.svg" class="header__logo"></img>
+          <button class="header__buy"><i class="fas fa-shopping-cart"></i><span>0</span></button>
+          <div class="header__cart">
+            <button class="cart close-btn"></button>
+            <h2>Your bag</h2>
+            <div class="cart__items">
+              <div class="cart__item">
+                <img src="images/logo-black.svg" alt="#">
+                <div class="cart__info">
+                  <p class="cart__name">Sofa</p>
+                  <p class="cart__price">$ 66</p>
+                  <button class="cart__remove">Remove</button>
+                </div>
+                <div class="cart__btns">
+                  <button class="cart__more"></button>
+                  <p class="cart__amount">3</p>
+                  <button class="cart__less"></button>
+                </div>
+              </div>
+            </div>
+            <h4 class="cart__total">
+              Total: $ 0
+            </h4>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="home__banner banner">
+          <div class="banner__container">
+            <h1 class="banner__title">Rest, Relax, Unwind</h1>
+            <h2 class="banner__subtitle">Embrace your choices - we do</h2>
+            <a href="products.html" class="banner__btn">
+              show now
+            </a>
+          </div>
+          <img src="images/main-bcg.jpeg" alt="background">
+        </section>
+        <section class="home__featured">
+          <div class="featured__container">
+            <h1 class="featured__title">/ Featured</h1>
+            <div class="loading">Loading...</div>
+            <div class="featured__items grid-items">
+              <div class="featured__item item">
+                <img src="" alt="">
+                <div class="item__btns">
+                <a href=""><i class="fas fa-search"></i></a>
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
+                </div>
+              </div>
+              <div class="featured__item item">
+                <div class="item__btns">
+                <a href=""><i class="fas fa-search"></i></a>
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
+                </div>
+              </div>
+              <div class="featured__item item">
+                <div class="item__btns">
+                <a href=""><i class="fas fa-search"></i></a>
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
+                </div>
+              </div>
+              </div>
+              <a href="products.html" class="all__btn">all products</a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

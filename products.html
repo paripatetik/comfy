@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | Comfy</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <!-- styles css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header white">
+        <div class="header__container">
+          <nav class="header__nav menu">
+            <ul class="menu__list">
+              <li><a href="index.html" class="menu__link">Home</a></li>
+              <li><a href="products.html" class="menu__link">Products</a></li>
+              <li><a href="about.html" class="menu__link">About</a></li>
+            </ul>
+          </nav>
+          <button class="header__btn btn-toggle"><span></span></button>
+          <img src="images/logo-black.svg" class="header__logo"></img>
+          <button class="header__buy"><i class="fas fa-shopping-cart"></i><span>0</span></button>
+          <div class="header__cart">
+            <button class="cart close-btn"></button>
+            <h2>Your bag</h2>
+            <div class="cart__items">
+              
+            </div>
+            <h4 class="cart__total">
+              Total: $ 0
+            </h4>
+          </div>
+        </div>
+      </header>
+      <div class="subheader">
+        <div class="subheader__container">
+          <p>Home / Products</p>
+        </div>
+      </div>
+      <main>
+        <div class="main__container">
+          <aside class="filterbar">
+            <form class="input-form">
+              <input type="text" class="search-input" placeholder="search..." />
+            </form>
+            <h1>Company</h1>
+            <nav class="filter__buttons">
+              <button data-value='all' class="company-btn selected">All</button>
+              <button data-value='ikea' class="company-btn">Ikea</button>
+              <button data-value='marcos' class="company-btn">Marcos</button>
+              <button data-value='caressa' class="company-btn">Caressa</button>
+              <button data-value='liddy' class="company-btn">Liddy</button>
+            </nav>
+            <div class="filter__range">
+              <input type="range" min="1" max="80" value="50">
+              <div class="filter__range-value"> Value: $50</div>
+            </div>
+          </aside>
+          <div class="products__items grid-items">
+            <div class="loading">Loading...</div>
+        
+            </div>
+        </div>
+      
+      </main>
+    </div>
+    <script type="module" src="js/products.js"></script>
+  </body>
+</html>

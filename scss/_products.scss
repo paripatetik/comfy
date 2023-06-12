@@ -1,0 +1,117 @@
+.subheader {
+    margin-top: 100px;
+    min-height: 19vh;
+    background-color: rgb(235, 176, 83);
+}
+.subheader__container {
+    display: flex;
+    align-items: center;
+    height: 19vh;
+    padding: 10px;
+    p{
+        color: white;
+        @include adaptiveValue("font-size", 40, 20);
+        text-transform: capitalize;
+        span{
+            
+        }
+    }
+}
+
+//
+
+.main__container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px 20px;
+    @media (min-width:$mobileSmall){
+        width: 70%;
+    }
+    @media (min-width:$mobile){
+         grid-template-columns: 200px 1fr; 
+         width: 100%;
+    }
+    @media (min-width:$pc){
+        grid-template-columns: 270px 1fr; 
+   }
+  
+}
+
+.filterbar {
+	h1{
+		font-size: 20px;
+		font-weight: 600;
+	}
+}
+
+.search-input {
+	margin-bottom: 35px;
+	width: 100%;
+	
+	padding: 8px 7px;
+	border-radius: 6px;
+	font-size: 18px;
+    transition: all 0.3s ease;
+    border: 2px solid rgb(6, 6, 6);
+    &:focus{
+        border: 2px solid rgb(230, 145, 33);
+        background-color: rgb(196, 200, 207);
+    }
+}
+.filter__buttons {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+
+	align-items: flex-start;
+	border: 2px solid rgb(0, 0, 0);
+	border-radius: 5px;
+}
+.company-btn {
+	transition: all 0.3s ease;
+	width: 100%;
+	text-align: start;
+	padding: 5px 10px;
+
+	&:hover{
+		color: rgb(106, 102, 102);
+	}
+	&.selected{
+		background-color: rgb(235, 176, 83);
+		color: white;
+	}
+	&:not(:last-child){
+		border-bottom: 2px solid rgb(0, 0, 0);
+	}
+}
+
+.filter__range{
+    margin-top: 30px;
+
+}
+.filter__range input{
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #cc8624; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.filter__range input::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: rgb(240, 154, 14); 
+    cursor: pointer;
+    border: 2px solid rgb(0, 0, 0);
+}
+.filter__range-value{
+    margin-top: 20px;
+}

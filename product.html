@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Product</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <!-- styles css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header white">
+        <div class="header__container">
+          <nav class="header__nav menu">
+            <ul class="menu__list">
+              <li><a href="index.html" class="menu__link">Home</a></li>
+              <li><a href="products.html" class="menu__link">Products</a></li>
+              <li><a href="about.html" class="menu__link">About</a></li>
+            </ul>
+          </nav>
+          <button class="header__btn btn-toggle"><span></span></button>
+          <img src="images/logo-black.svg" class="header__logo"></img>
+          <button class="header__buy"><i class="fas fa-shopping-cart"></i><span>0</span></button>
+          <div class="header__cart">
+            <button class="cart close-btn"></button>
+            <h2>Your bag</h2>
+            <div class="cart__items">
+              
+            </div>
+            <h4 class="cart__total">
+              Total: $ 0
+            </h4>
+          </div>
+        </div>
+      </header>
+      <div class="subheader">
+        <div class="subheader__container">
+          <p>Home / Products</p>
+        </div>
+      </div>
+     
+      <div class="product__container">
+        <div class="loading">Loading...</div>
+        <img src='' class="product__img" alt="#">
+        <div class="product__info">
+          <p class="product__name"></p>
+          <p class="product__price"></p>
+          <div class="product__colors"></div>
+          <p class="product__desc"></p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="js/product.js"></script>
+  </body>
+</html>
